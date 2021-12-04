@@ -1,0 +1,102 @@
+{
+    "data": [
+        [
+            "12/4/2021",
+            "Juicy Files",
+            "filetype:xls intext:(location|first name|last name|zipcode|address|family name|phone number|surname|childs|child)",
+            "I2rys",
+            "Search for XLS files with personal information."
+        ],
+        [
+            "12/4/2021",
+            "Juicy Files",
+            "\"Facebook\" filetype:txt (username|password)",
+            "I2rys",
+            "Search for TXT files that contains Facebook username & password."
+        ],
+        [
+            "11/19/2021",
+            "Juicy Files",
+            "site:gov.* intitle:\"index of\" *.csv",
+            "Midhun Mohanan",
+            "Government files that contains information."
+        ],
+        [
+            "12/4/2021",
+            "Juicy Files",
+            "intitle:index of settings.py",
+            "Anonymous",
+            "Find files containing juicy information."
+        ],
+        [
+            "12/4/2021",
+            "Juicy Files",
+            "inurl:\"*admin | login\" | inurl:.php | .asp",
+            "Anonymous",
+            "Find pages containing login portal."
+        ],
+        [
+            "12/4/2021",
+            "Juicy Files",
+            "allintext:\"*.@gmail.com\" OR \"password\" OR \"username\" filetype:xlsx",
+            "I2rys",
+            "Find files that contains juicy accounts."
+        ],
+        [
+            "12/3/2021",
+            "Juicy Files",
+            "(instagram|twitter|facebook|taobao|gmail|yahoo|protonmail|hotmail) filetype:txt (email|username|password)",
+            "I2rys",
+            "Find files that contains juicy accounts."
+        ],
+        [
+            "29/8/2019",
+            "Juicy Files",
+            "intext:\"@gmail.com\" intext:\"password\" inurl:/files/ ext:txt",
+            "Reza Abasi",
+            "Find files containing juicy accounts."
+        ],
+        [
+            "12/4/2021",
+            "Juicy Files",
+            "filtype:sql intext:(user AND password AND email)",
+            "I2rys",
+            "Find files containing juicy accounts."
+        ],
+        [
+            "12/4/2021",
+            "Juicy Files",
+            "site:gov filetype:xls intext:(confidential | secret | top secret | spy | disclosed | private | not for public | agency)",
+            "I2rys",
+            "Find files containing juicy information."
+        ],
+        [
+            "12/4/2021",
+            "Juicy Files",
+            "filetype:pdf intext:(confidential | secret | top secret | spy | disclosed | private | not for public | agency)",
+            "I2rys",
+            "Find files containing juicy information."
+        ],
+        [
+            "12/4/2021",
+            "Juicy Files",
+            "filetype:log intext:(location|zipcode|city|latitude|longitude)",
+            "I2rys",
+            "Find files containing juicy information"
+        ],
+        [
+            "12/4/2021",
+            "Juicy Files",
+            "filetype:txt intext:(email|username AND password AND minecraft|minecraft accounts)",
+            "I2rys",
+            "Find files that contains juicy accounts."
+        ],
+        [
+            "12/4/2021",
+            "Juicy Files",
+            "filetype:log intext:(username|password|email)",
+            "I2rys",
+            "Find files that contains juicy accounts."
+        ]
+    ]
+}

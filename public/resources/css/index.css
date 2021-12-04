@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    overflow: hidden;
+}
+
+#top-panel{
+    background-color: #100F0F;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 6%;
+}
+
+#icon{
+    position: fixed;
+    left: 1%;
+    top: 1px;
+    width: 38px;
+    height: 36px;
+}
+
+#title{
+    color: white;
+    font-size: 35px;
+}
+
+#credit{
+    color: white;
+    font-size: 35px;
+}
+
+#buttons{
+    position: absolute;
+    top: 0%;
+    right: 1%;
+    font-size: 25px;
+}
+
+#dorks-table{
+    position: absolute;
+    top: 50px;
+    left: 1%;
+    width: 98%;
+    height: 100px;
+}
+
+tbody td, select{
+    background-color: #100F0F;
+    color: white;
+}
+
+#dorks_info{
+    color: white;
+}

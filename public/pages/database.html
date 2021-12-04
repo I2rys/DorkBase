@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/icon" href="../resources/images/favicon.ico">
+        <title>DorkBase | Database</title>
+    </head>
+    <body>
+        <!-- Dependencies -->
+        <link rel="stylesheet" href="../resources/css/index.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
+        <!-- Main -->
+        <div id="top-panel">
+            <img src="resources/images/favicon.ico" id="icon">
+            <table id="buttons">
+                <tbody>
+                    <tr>
+                        <td><a href="/home" style="color: #909090; text-decoration: none;">Home</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><a href="/database" style="color: #909090; text-decoration: none;">Database</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="dorks-table">
+            <table id="dorks">
+                <thead>
+                    <tr style="color: white; background-color: black;">
+                        <th>Date</th>
+                        <th>Category</th>
+                        <th>Dork</th>
+                        <th>Author</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+  
+        <script src="plugins/request.js"></script>
+        <script>
+            const Request = require("request")
+
+            Request(`${location.origin}/api/database`, function(err, res, body){
+                $("#dorks").DataTable({
+                    "autoWidth": true,
+                    "scrollY": 460,
+                    "ajax": {
+                        "url": "/api/database",
+                        "type": "GET"
+                    }
+                });
+            })
+        </script>
+    </body>
+</html>
